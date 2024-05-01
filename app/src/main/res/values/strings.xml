@@ -1,11 +1,25 @@
 <resources>
     <string name="app_name">Fishing_App</string>
+
     // Przyciski ze strony pierwszej
     <string name="button1_text">Niezbędnik wędkarza</string>
     <string name="button2_text">Przycisk 2</string>
     <string name="button3_text">Przycisk 3</string>
+
     // Etykiety przyciskow i opisy z ActivityOne
     <string name="bar1">Ryby, łowiska, przynęty</string>
     <string name="bar2">Kalendarz wędkarski</string>
     <string name="bar3">Wiązanie haczyka</string>
+
+    // ImageViev i TextViev z activity_hook.xml
+    <string name="description_image1">Przewlecz końcówkę żyłki przez oczko haczyka.</string>
+    <string name="description_image2">Złap oba końce żyłki (część przewleczoną przez oczko i resztę żyłki) i
+                                        zrób pętlę tak, aby krzyżowały się, tworząc formę litery "S".</string>
+    <string name="description_image3">Przewiń krótszy koniec żyłki wokół dłuższego kilka razy,
+                                        przesuwając się w kierunku oczka haczyka.</string>
+    <string name="description_image4">Przewlecz końcówkę krótszej żyłki z powrotem przez pętlę blisko oczka haczyka.</string>
+    <string name="description_image5">Delikatnie pociągnij za oba końce żyłki, aby zaciągnąć węzeł. Uważaj,
+        aby węzeł był równomiernie zaciśnięty i upewnij się, że końcówki są bezpiecznie zabezpieczone.</string>
+    <string name="image_description">Opis obrazu</string>
+
 </resources>

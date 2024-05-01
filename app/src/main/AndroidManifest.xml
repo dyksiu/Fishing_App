@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fishing_App"
         tools:targetApi="31">
+
+        <activity
+            android:name=".Activity_Hook"
+            android:exported="false" />
+        <activity
+            android:name=".Activity_Calendar"
+            android:exported="false" />
+        <activity
+            android:name=".Acitivity_Fish"
+            android:exported="false" />
         <activity
             android:name=".ActivityThree"
             android:exported="false" />
