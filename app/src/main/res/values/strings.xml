@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">Fishing_App</string>
-    <string name="button1_text">Przycisk 1</string>
+    // Przyciski ze strony pierwszej
+    <string name="button1_text">Niezbędnik wędkarza</string>
     <string name="button2_text">Przycisk 2</string>
     <string name="button3_text">Przycisk 3</string>
+    // Etykiety przyciskow i opisy z ActivityOne
+    <string name="bar1">Ryby, łowiska, przynęty</string>
+    <string name="bar2">Kalendarz wędkarski</string>
+    <string name="bar3">Wiązanie haczyka</string>
 </resources>

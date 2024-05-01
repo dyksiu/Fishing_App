@@ -1,5 +1,6 @@
 package com.example.fishing_app
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,8 @@ import androidx.core.view.WindowInsetsCompat
 import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var buttonHandler: ButtonHandler
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -18,18 +21,17 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        val button1 = findViewById<Button>(R.id.button1)
-        val button2 = findViewById<Button>(R.id.button2)
-        val button3 = findViewById<Button>(R.id.button3)
+        buttonHandler = ButtonHandler(this)
 
-        button1.setOnClickListener {
-            // Kod do wykonania po kliknięciu przycisku 1
+        findViewById<Button>(R.id.button1).setOnClickListener {
+            buttonHandler.startFirstActivity()
         }
-        button2.setOnClickListener {
-            // Kod do wykonania po kliknięciu przycisku 2
+        findViewById<Button>(R.id.button2).setOnClickListener {
+            buttonHandler.startSecondActivity()
         }
-        button3.setOnClickListener {
-            // Kod do wykonania po kliknięciu przycisku 3
+        findViewById<Button>(R.id.button3).setOnClickListener {
+            buttonHandler.startThirdActivity()
         }
+
     }
 }
