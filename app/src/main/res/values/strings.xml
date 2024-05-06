@@ -21,5 +21,16 @@
     <string name="description_image5">Delikatnie pociągnij za oba końce żyłki, aby zaciągnąć węzeł. Uważaj,
         aby węzeł był równomiernie zaciśnięty i upewnij się, że końcówki są bezpiecznie zabezpieczone.</string>
     <string name="image_description">Opis obrazu</string>
+    <string name="title_activity_fish_compose">ActivityFishCompose</string>
+    <string name="title_activity_fish_list_screen">FishListScreen</string>
+
+    //Lista ryb - rozwijana lista
+    <string name="fish_1">Ryba 1</string>
+    <string name="fish_2">Ryba 2</string>
+    <string name="fish_3">Ryba 3</string>
+    <string name="fish_4">Ryba 4</string>
+    <string name="fish_5">Ryba 5</string>
+    <string name="fish_6">Ryba 6</string>
+
 
 </resources>
