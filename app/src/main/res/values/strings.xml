@@ -24,13 +24,44 @@
     <string name="title_activity_fish_compose">ActivityFishCompose</string>
     <string name="title_activity_fish_list_screen">FishListScreen</string>
 
-    //Lista ryb - rozwijana lista
-    <string name="fish_1">Ryba 1</string>
-    <string name="fish_2">Ryba 2</string>
-    <string name="fish_3">Ryba 3</string>
-    <string name="fish_4">Ryba 4</string>
-    <string name="fish_5">Ryba 5</string>
-    <string name="fish_6">Ryba 6</string>
+    //Lista ryb - rozwijana lista wraz z opisem
+    <string name="fish_1">Szczupak</string>
+    <string name="fish_description_1">Description of Fish 1</string>
+    <string name="fish_2">Sum europejski</string>
+    <string name="fish_description_2">Description of Fish 2</string>
+    <string name="fish_3">Węgorz europejski</string>
+    <string name="fish_description_3">Description of Fish 3</string>
+    <string name="fish_4">Leszcz</string>
+    <string name="fish_description_4">Description of Fish 4</string>
+    <string name="fish_5">Lin</string>
+    <string name="fish_description_5">Description of Fish 5</string>
+    <string name="fish_6">Wzdręga</string>
+    <string name="fish_description_6">Description of Fish 6</string>
+    <string name="fish_7">Ukleja</string>
+    <string name="fish_description_7">Description of Fish 7</string>
+    <string name="fish_8">Karp</string>
+    <string name="fish_description_8">Description of Fish 8</string>
+    <string name="fish_9">Krąp</string>
+    <string name="fish_description_9">Description of Fish 9</string>
+    <string name="fish_10">Płoć</string>
+    <string name="fish_description_10">Description of Fish 10</string>
+    <string name="fish_11">Jaź</string>
+    <string name="fish_description_11">Description of Fish 11</string>
+    <string name="fish_12">Karaś pospolity</string>
+    <string name="fish_description_12">Description of Fish 12</string>
+    <string name="more_info">Więcej informacji</string>
 
+    <string name="fish_image_1">Szczupak</string>
+    <string name="fish_image_2">Sum europejski</string>
+    <string name="fish_image_3">Węgorz europejski</string>
+    <string name="fish_image_4">Leszcz</string>
+    <string name="fish_image_5">Lin</string>
+    <string name="fish_image_6">Wzdręga</string>
+    <string name="fish_image_7">Ukleja</string>
+    <string name="fish_image_8">Karp</string>
+    <string name="fish_image_9">Krąp</string>
+    <string name="fish_image_10">Płoć</string>
+    <string name="fish_image_11">Jaź</string>
+    <string name="fish_image_12">Karaś pospolity</string>
 
 </resources>
