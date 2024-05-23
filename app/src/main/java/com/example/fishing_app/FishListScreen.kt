@@ -169,8 +169,14 @@ fun FishDescriptionDialog(fishName: String, fishDescription: String, fishImage: 
                 Spacer(modifier = Modifier.height(16.dp))
                 Text(text = fishDescription, style = MaterialTheme.typography.body1)
                 Spacer(modifier = Modifier.height(16.dp))
-                Button(onClick = onDismissRequest) {
-                    Text("OK")
+                Button(
+                    onClick = onDismissRequest,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                ) {
+                    Box(modifier = Modifier.fillMaxWidth(), contentAlignment = Alignment.Center) {
+                        Text(text = "OK")
+                    }
                 }
             }
         }

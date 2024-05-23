@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Fishing_App</string>
+    // Dodanie podpisow do wyswietlania pogody i daty z API
+    <string name="weather_description">%1$s, %2$s: %3$.1f°C, %4$s</string>
+    <string name="weather_error">Nie udało się załadować danych pogodowych.</string>
+
 
     // Przyciski ze strony pierwszej
     <string name="button1_text">Niezbędnik wędkarza</string>
@@ -24,33 +28,92 @@
     <string name="title_activity_fish_compose">ActivityFishCompose</string>
     <string name="title_activity_fish_list_screen">FishListScreen</string>
 
-    //Lista ryb - rozwijana lista wraz z opisem
+    //Lista ryb - rozwijana lista
     <string name="fish_1">Szczupak</string>
-    <string name="fish_description_1">Description of Fish 1</string>
     <string name="fish_2">Sum europejski</string>
-    <string name="fish_description_2">Description of Fish 2</string>
     <string name="fish_3">Węgorz europejski</string>
-    <string name="fish_description_3">Description of Fish 3</string>
     <string name="fish_4">Leszcz</string>
-    <string name="fish_description_4">Description of Fish 4</string>
     <string name="fish_5">Lin</string>
-    <string name="fish_description_5">Description of Fish 5</string>
     <string name="fish_6">Wzdręga</string>
-    <string name="fish_description_6">Description of Fish 6</string>
     <string name="fish_7">Ukleja</string>
-    <string name="fish_description_7">Description of Fish 7</string>
     <string name="fish_8">Karp</string>
-    <string name="fish_description_8">Description of Fish 8</string>
     <string name="fish_9">Krąp</string>
-    <string name="fish_description_9">Description of Fish 9</string>
     <string name="fish_10">Płoć</string>
-    <string name="fish_description_10">Description of Fish 10</string>
     <string name="fish_11">Jaź</string>
-    <string name="fish_description_11">Description of Fish 11</string>
     <string name="fish_12">Karaś pospolity</string>
-    <string name="fish_description_12">Description of Fish 12</string>
     <string name="more_info">Więcej informacji</string>
 
+    // Opisy ryb z listy rozwijanej
+    <string name="fish_description_1">Drapieżna ryba słodkowodna, popularna w wędkarstwie sportowym. Na co łowić: woblery, gumowe rybki, obrotówki, wahadłówki, żywe lub martwe rybki.
+        Kiedy łapiemy: wiosna i jesień - wczesny ranek i późne popołudnie - preferuje chlodniejszą wode, często przebywa w zaroślach.
+        Są to agresywne ryby, które często polują z zasadzki - zalecane przynęty które dobrze imitują ruch ofiary.</string>
+    //
+    <string name="fish_description_2">Największa ryba słodkowodna w Europie. Na co łowić: woblery, gumowe rybki, duże błyski, rosówki, pijawki, martwe rybki, wątrobę i raki.
+        Co je: głównie ryby, ale także raki, żaby, małe ssaki, ptaki wodne i bezkręgowce.
+        Kiedy łapiemy: lato i późna wiosna - noc, wczesny poranek i późne popołudnie - preferuje ciepłą wode, dlatego często przebywa w głebokich miejsach z duża liczbą kryjówek.
+        Są to drapieżniki żerujące głownie nocą, dlatego najlepsze wyniki osiąga się łowiąc po zmroku.</string>
+    //
+    <string name="fish_description_3">Ryba słodkowodna, znana z długiego i wężowatego ciała - dosyć popularna wsród wędkarzy.
+        Na co łowić: rosówki, pijawki, martwe rybki, kawalki ryb, wątroba.
+        Co je: Małe ryby, skorupiaki, owady wodne, dżdżownice, ślimaki.
+        Kiedy łapiemy: najlepszy czas to późna wiosna do wczesnej jesieni - noc, wczesny ranek i późny wieczór - preferuje muliste i zacienione miejsca, często przebywa w pobliżu roślinności wodnej.
+        Są aktywne głównie nocą, więc wędkowanie po zmroku przynosi najlepsze rezultaty.</string>
+    //
+    <string name="fish_description_4">Popularna ryba słodkowodna, ceniona przez wędkarzy.
+        Na co łowić: czerwone i białe robaki, rosówki, kukurydza, ciasto, kasza manna i groch.
+        Co je: głównie bezkręgowce, rośliny wodne i detrytus.
+        Kiedy łapiemy: wiosna i lato - wczesny ranek i późne popołudnie - preferuje spokojne, ciepłe wody, często przebywa na mulistym dnie w pobliżu roślinności.
+        Są najaktywniejsze przy spokojnej pogodzie, szczególnie przed burzą lub po deszczu, kiedy woda jest dobrze natleniona.</string>
+    //
+    <string name="fish_description_5">Popularna ryba słodkowodna, ceniona przez wędkarzy za swoje walory smakowe i sportowe.
+        Na co łowić: czerwone i białe robaki, rosówki, kukurydza, ciasto, ziarna zbóż (pszenica i jęczmień) oraz na groch.
+        Co je: przeważnie bezkręgowce, ślimaki, detrytus i rośliny wodne.</string>
+        Kiedy łapiemy: najlepszy okres to wiosna i lato - wczesny ranek i późne popołudnie - preferuje ciepłe, spokojne wody z bujną roślinnością, często przebywa na mulistym dnie.
+        Najbardziej aktywne są w ciepłych miesiącach, a najlepsze wyniki osiąga się łowiąc w miejscach z dużą ilością roślinności wodnej.
+    //
+    <string name="fish_description_6">Znana również jako karaś srebrzysty jest popularną rybą słodkowodną.
+        Na co łowić: czerwone i białe robaki, larwy owadów, kukurydza, chleb i ziarna zbóż.
+        Co je: głównie rośliny wodne, glony, bezkręgowce i owady.
+        Kiedy łapiemy: najlepszy okres to późna wiosna do wczesnej jesieni - cały dzień, szczególnie w ciepłe i słoneczne dni - preferuje spokojne, ciepłe wody.
+        Najbardziej są aktywne w cieplejszych miesiącach, a najlepsze wyniki osiąga się, łowiąc w miejscach z bujną roślinnością.</string>
+    //
+    <string name="fish_description_7">Mała, popularna ryba słodkowodna która często jest używana jako przynęta na większe drapieżniki.
+        Na co łowić: czerwone i białe robaki, larwy owadów, małe błyski oraz sztuczne muszki.
+        Co je: głównie plankton, małe bezkręgowce, owady, larwy owadów i rośliny wodne.
+        Kiedy łapiemy: wiosna i lato - cały dzień, szczególnie aktywne są w ciepłe i słoneczne dni - preferuje czyste, dobrze natlenione wody.
+        Najbardziej aktywne są w cieplejszych miesiącach, zwłaszcza w płytkich wodach w pobliżu brzegu.</string>
+    //
+    <string name="fish_description_8">Popularna ryba słodkowodna, ceniona zarówno w wędkarstwie sportowym jak i w kuchni.
+        Na co łowić: robaki, kukurydza, rosówki, kulki proteinowe, pellet, chleb i ziemniaki.
+        Co je: głównie rośliny wodne, glony, bezkręgowce i ziarna zbóż.
+        Kiedy łapiemy: Wiosna, lato i wczesna jesień - wczesny ranek i późne popołudnie - preferuje ciepłe, spokojne wody z mulistym dnem.
+        Najbardziej aktywne są w cieplejszych miesiącach, szczególnie po okresie tarła.</string>
+    //
+    <string name="fish_description_9">Mniejsza ryba słodkowodna z rodziny karpiowatych, często jest mylona z leszczem.
+        Na co łowić: czerwone i białe robaki, ochotka, ciasto, kasza manna i kukurydza.
+        Co je: głównie bezkręgowce, rośliny wodne i detrytus.
+        Kiedy łapiemy: wiosna i lato - caly dzień, chociaż preferuje się ranek i późne popołudnie - preferuje spokojne, ciepłe wody i muliste dno.
+        Najaktywniejsze są przy spokojnej pogodzie, szczególnie w zarośniętych obszarach jezior i rzek.</string>
+    //
+    <string name="fish_description_10">Powszechnie występująca ryba słodkowodna, popularna w wędkarstwie rekreacyjnym.
+        Na co łowić: czerwone i białe robaki, ochotka, larwy owadów, chleb, ciasto, kukurydza i kasza manna.
+        Co je: głównie bezkręgowce, rośliny wodne, glony i nasiona.
+        Kiedy łapiemy: wiosna, lato i jesień - cały dzień, najlepiej rano i późnym wieczorem - preferuje czyste, spokojne wody, często przebywa w strefie przybrzeżnej z roślinnością.
+        Najaktywniejsze w cieplejszych miesiącach i najlepiej łowić je w pobliżu roślinności wodnej, gdzie znajdują dużo pokarmu.</string>
+    //
+    <string name="fish_description_11">Słodkowodna ryba z rodziny karpiowatych, popularna wśród wędkarzy.
+        Na co łowić: czerwone i białe robaki, ochotka, larwy owadów, chleb, kukurydza, ciasto i groch.
+        Co je: głównie bezkręgowce, małe ryby, rośliny wodne i glony.
+        Kiedy łapiemy: wiosna, lato i wczesna jesień - wczesny ranek i późne popołudnie - preferuje spokojne, dobrze natlenione wody, często przebywa przy brzegu w pobliżu zatopionych drzew i korzeni.
+        Aktywne w cieplejszych miesiącach, a najlepsze wyniki osiąga się, łowiąc w czystych, spokojnych wodach z dużą ilością naturalnego pokarmu.</string>
+    //
+    <string name="fish_description_12">Ryba słodkowodna z rodziny karpiowatych, często występująca w stawach i jeziorach.
+        Na co łowić: czerwone i białe robaki, rosówki, ochotka, ciasto, chleb, kukurydza i groch.
+        Co je: głownie bezkręgowce, rośliny wodne i detrytus.
+        Kiedy łapiemy: wiosna, lato i wczesna jesień - wczesny ranek i późne popołudnie - preferuje ciepłe, spokojne wody z mulistym dnem.
+        Najaktywniejsze są w cieplejszych miesiącach, a najlepsze wyniki osiąga się, łowiąc w miejsach z dużą ilością naturalnego pokarmu i kryjówek.</string>
+
+    // Podpisy pod obrazki ryb
     <string name="fish_image_1">Szczupak</string>
     <string name="fish_image_2">Sum europejski</string>
     <string name="fish_image_3">Węgorz europejski</string>
