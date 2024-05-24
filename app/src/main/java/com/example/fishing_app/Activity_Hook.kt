@@ -14,7 +14,7 @@ class Activity_Hook : AppCompatActivity() {
     private lateinit var descriptionText: TextView
     private var currentIndex = 0
 
-    // Tablice z ID zasobów obrazów i opisów
+    // tablice z ID zasobów obrazow i opisow
     private val images = arrayOf(
         R.drawable.hook_1, R.drawable.hook_2, R.drawable.hook_3,
         R.drawable.hook_4, R.drawable.hook_5
@@ -47,7 +47,7 @@ class Activity_Hook : AppCompatActivity() {
         }
 
 
-
+    // aktualizacja obrazu i tekstu na podstawie "currentIndex" - wskazanie aktualnie wyswietlanego elementu
     }
     private fun updateContent() {
         imageView.setImageResource(images[currentIndex])

@@ -10,13 +10,4 @@ class ButtonHandler(val context: Context) {
         context.startActivity(intent)
     }
 
-    fun startSecondActivity() {
-        val intent = Intent(context, ActivityTwo::class.java)
-        context.startActivity(intent)
-    }
-
-    fun startThirdActivity() {
-        val intent = Intent(context, ActivityThree::class.java)
-        context.startActivity(intent)
-    }
 }

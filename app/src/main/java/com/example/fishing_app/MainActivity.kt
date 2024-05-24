@@ -1,5 +1,6 @@
 package com.example.fishing_app
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -17,6 +18,7 @@ import retrofit2.Response
 import java.text.SimpleDateFormat
 import java.util.*
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var buttonHandler: ButtonHandler
     private lateinit var dateTimeTextView: TextView
@@ -25,7 +27,7 @@ class MainActivity : AppCompatActivity() {
     private val updateTimeTask = object : Runnable {
         override fun run() {
             updateDateTime()
-            handler.postDelayed(this, 1000) // Aktualizuj co sekundę
+            handler.postDelayed(this, 1000)
         }
     }
 
@@ -44,28 +46,29 @@ class MainActivity : AppCompatActivity() {
 
         buttonHandler = ButtonHandler(this)
 
+        // konfiguracja przycisków widocznych na ekranie
         findViewById<Button>(R.id.button1).setOnClickListener {
             buttonHandler.startFirstActivity()
         }
-        findViewById<Button>(R.id.button2).setOnClickListener {
-            buttonHandler.startSecondActivity()
+        findViewById<Button>(R.id.button4).setOnClickListener {
+            startActivity(Intent(this, FishingCatchActivity::class.java))
         }
-        findViewById<Button>(R.id.button3).setOnClickListener {
-            buttonHandler.startThirdActivity()
+        findViewById<Button>(R.id.button5).setOnClickListener {
+            startActivity(Intent(this, ViewCatchesActivity::class.java))
         }
 
-        // Rozpocznij aktualizowanie daty i godziny
         handler.post(updateTimeTask)
-
-        // Pobierz i wyświetl aktualną pogodę
         fetchWeather()
     }
 
+    // funkcja odpowiedizalna za aktualizacje daty i czasu
     private fun updateDateTime() {
         val currentDateTime = SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault()).format(Date())
         dateTimeTextView.text = currentDateTime
     }
 
+    // funkcja odpowiedzialna za pobieranie pogody z API
+    // -> https://www.weatherapi.com - API ktore jest wykorzystywane w aplikacji
     private fun fetchWeather() {
         val apiKey = "378a357439de4bc1b58101738242305"
         val location = "Poznan"

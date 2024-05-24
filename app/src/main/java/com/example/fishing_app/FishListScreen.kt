@@ -17,6 +17,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
 import com.example.fishing_app.R
 
+// lista ryb -> po kliknieciu na nazwe ryby wyswietlany jest dialog z opisem
+// dodatkowo jako ostatni element jest odnosnik do zewnetrznej strony
 @Composable
 fun FishList() {
     val fishList = listOf(
@@ -32,7 +34,7 @@ fun FishList() {
         R.string.fish_10,
         R.string.fish_11,
         R.string.fish_12,
-        R.string.more_info // Dodajemy nowy element do listy
+        R.string.more_info
     )
 
     val fishDescriptions = listOf(
@@ -100,6 +102,7 @@ fun FishList() {
     }
 }
 
+// odpowiada za mozliwosc klikniecia w nazwe ryby
 @Composable
 fun FishItem(name: String, onClick: () -> Unit) {
     Surface(
@@ -121,6 +124,7 @@ fun FishItem(name: String, onClick: () -> Unit) {
     }
 }
 
+// odpowiada za ostatni element ktory przenosi na zewnetrzna strone przez podany URL
 @Composable
 fun MoreInfoItem(name: String, url: String) {
     val uriHandler = LocalUriHandler.current
@@ -144,11 +148,12 @@ fun MoreInfoItem(name: String, url: String) {
     }
 }
 
+// funkcja odpowiedzialna za wyswietlanie dialogu -> zamkniecie po wcisnieciu "OK"
 @Composable
 fun FishDescriptionDialog(fishName: String, fishDescription: String, fishImage: Int, onDismissRequest: () -> Unit) {
     Dialog(
         onDismissRequest = onDismissRequest,
-        properties = DialogProperties(usePlatformDefaultWidth = false) // Sprawia, że dialog zajmuje cały ekran
+        properties = DialogProperties(usePlatformDefaultWidth = false)
     ) {
         Surface(
             modifier = Modifier
