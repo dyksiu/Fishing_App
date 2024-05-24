@@ -1,20 +1,27 @@
 <resources>
-    <string name="app_name">Fishing_App</string>
+    <string name="app_name">Rybka</string>
+
+    // ===============================================================================================
     // Dodanie podpisow do wyswietlania pogody i daty z API
     <string name="weather_description">%1$s, %2$s: %3$.1f°C, %4$s</string>
     <string name="weather_error">Nie udało się załadować danych pogodowych.</string>
+    // ===============================================================================================
 
-
+    // ===============================================================================================
     // Przyciski ze strony pierwszej
     <string name="button1_text">Niezbędnik wędkarza</string>
-    <string name="button2_text">Przycisk 2</string>
-    <string name="button3_text">Przycisk 3</string>
+    <string name="button2_text">Zapisz połów</string>
+    <string name="button3_text">Wyświetl połowy</string>
+    // ===============================================================================================
 
+    // ===============================================================================================
     // Etykiety przyciskow i opisy z ActivityOne
     <string name="bar1">Ryby, łowiska, przynęty</string>
     <string name="bar2">Kalendarz wędkarski</string>
     <string name="bar3">Wiązanie haczyka</string>
+    // ===============================================================================================
 
+    // ===============================================================================================
     // ImageViev i TextViev z activity_hook.xml
     <string name="description_image1">Przewlecz końcówkę żyłki przez oczko haczyka.</string>
     <string name="description_image2">Złap oba końce żyłki (część przewleczoną przez oczko i resztę żyłki) i
@@ -27,8 +34,10 @@
     <string name="image_description">Opis obrazu</string>
     <string name="title_activity_fish_compose">ActivityFishCompose</string>
     <string name="title_activity_fish_list_screen">FishListScreen</string>
+    // ===============================================================================================
 
-    //Lista ryb - rozwijana lista
+    // ===============================================================================================
+    //Lista ryb - rozwijana lista -> FishListScreen.kt
     <string name="fish_1">Szczupak</string>
     <string name="fish_2">Sum europejski</string>
     <string name="fish_3">Węgorz europejski</string>
@@ -43,7 +52,7 @@
     <string name="fish_12">Karaś pospolity</string>
     <string name="more_info">Więcej informacji</string>
 
-    // Opisy ryb z listy rozwijanej
+    // Opisy ryb z listy rozwijanej -> FishListScreen.kt
     <string name="fish_description_1">Drapieżna ryba słodkowodna, popularna w wędkarstwie sportowym. Na co łowić: woblery, gumowe rybki, obrotówki, wahadłówki, żywe lub martwe rybki.
         Kiedy łapiemy: wiosna i jesień - wczesny ranek i późne popołudnie - preferuje chlodniejszą wode, często przebywa w zaroślach.
         Są to agresywne ryby, które często polują z zasadzki - zalecane przynęty które dobrze imitują ruch ofiary.</string>
@@ -68,8 +77,10 @@
     <string name="fish_description_5">Popularna ryba słodkowodna, ceniona przez wędkarzy za swoje walory smakowe i sportowe.
         Na co łowić: czerwone i białe robaki, rosówki, kukurydza, ciasto, ziarna zbóż (pszenica i jęczmień) oraz na groch.
         Co je: przeważnie bezkręgowce, ślimaki, detrytus i rośliny wodne.</string>
-        Kiedy łapiemy: najlepszy okres to wiosna i lato - wczesny ranek i późne popołudnie - preferuje ciepłe, spokojne wody z bujną roślinnością, często przebywa na mulistym dnie.
-        Najbardziej aktywne są w ciepłych miesiącach, a najlepsze wyniki osiąga się łowiąc w miejscach z dużą ilością roślinności wodnej.
+    Kiedy łapiemy: najlepszy okres to wiosna i lato - wczesny ranek i późne popołudnie - preferuje
+    ciepłe, spokojne wody z bujną roślinnością, często przebywa na mulistym dnie.
+    Najbardziej aktywne są w ciepłych miesiącach, a najlepsze wyniki osiąga się łowiąc w miejscach z
+    dużą ilością roślinności wodnej.
     //
     <string name="fish_description_6">Znana również jako karaś srebrzysty jest popularną rybą słodkowodną.
         Na co łowić: czerwone i białe robaki, larwy owadów, kukurydza, chleb i ziarna zbóż.
@@ -113,7 +124,7 @@
         Kiedy łapiemy: wiosna, lato i wczesna jesień - wczesny ranek i późne popołudnie - preferuje ciepłe, spokojne wody z mulistym dnem.
         Najaktywniejsze są w cieplejszych miesiącach, a najlepsze wyniki osiąga się, łowiąc w miejsach z dużą ilością naturalnego pokarmu i kryjówek.</string>
 
-    // Podpisy pod obrazki ryb
+    // Podpisy pod obrazki ryb -> FishListScreen.kt
     <string name="fish_image_1">Szczupak</string>
     <string name="fish_image_2">Sum europejski</string>
     <string name="fish_image_3">Węgorz europejski</string>
@@ -126,5 +137,19 @@
     <string name="fish_image_10">Płoć</string>
     <string name="fish_image_11">Jaź</string>
     <string name="fish_image_12">Karaś pospolity</string>
+    // ===============================================================================================
+
+    // ===============================================================================================
+    // Podpisy dla FishingCatchActivity.kt:
+    <string name="succesful_save">Zapisano połów!</string>
+    <string name="check_your_data">Proszę wprowadzić poprawne dane.</string>
+    // ===============================================================================================
+
+    // ===============================================================================================
+    // Podpisy dla ViewCatchesActivity.kt:
+    <string name="correct_ID">Proszę wprowadzić poprawne ID połowu.</string>
+    <string name="all_fishing_deleted">Usunięto wszystkie połowy!</string>
+    <string name="deleted_fishing_ID">Usunięto połów o ID: </string>
+    // ===============================================================================================
 
 </resources>

@@ -1,5 +1,10 @@
 package com.example.fishing_app.model
 
+// odpowiedz z API:
+// -> Location -> lokalizacja
+// -> Current -> aktualna pogoda
+
+// reszty nie opisuje -> tak bylo na stronce tego API
 data class WeatherResponse(
     val location: Location,
     val current: Current

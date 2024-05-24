@@ -7,7 +7,7 @@
     android:padding="16dp"
     android:background="@drawable/main_layout">
 
-    <!-- CardView otaczający TextViews wyświetlające datę i pogodę -->
+    <!-- CardView -> szare pole w ktorym wyswietla sie data i pogoda -->
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="0dp"
@@ -28,7 +28,7 @@
             android:padding="16dp"
             android:gravity="center">
 
-            <!-- TextView wyświetlający aktualną datę i godzinę -->
+            <!-- TextView -> odpowiadajacy za wyswietlanie daty i godziny -->
             <TextView
                 android:id="@+id/dateTimeTextView"
                 android:layout_width="wrap_content"
@@ -37,7 +37,7 @@
                 android:textColor="#ff2400"
                 android:layout_marginBottom="8dp" />
 
-            <!-- TextView wyświetlający aktualną pogodę -->
+            <!-- TextView -> odpowiadajacy za wyswietlanie pogody -->
             <TextView
                 android:id="@+id/weatherTextView"
                 android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
-    <!-- LinearLayout, który wyśrodkowuje przyciski pionowo na ekranie -->
+    <!-- LinearLayout -> wysrodkowanie przyciskow -->
     <LinearLayout
         android:id="@+id/buttonContainer"
         android:layout_width="match_parent"
@@ -59,7 +59,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
-        <!-- Button, który uruchamia pierwszą aktywność -->
+        <!-- Przycisk 1 -> odpowiedzialny za przejscie do niezbednika wedkarza -->
         <Button
             android:id="@+id/button1"
             android:layout_width="wrap_content"
@@ -67,20 +67,22 @@
             android:text="@string/button1_text"
             android:layout_marginBottom="20dp" />
 
-        <!-- Button, który uruchamia drugą aktywność -->
+        <!-- Przycisk 2 -> odpowiedzialny za zapis polowow -->
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/button2_text"
-            android:layout_marginBottom="20dp" />
+            android:layout_marginBottom="20dp" />/>
 
-        <!-- Button, który uruchamia trzecią aktywność -->
+        <!-- Przycisk 3 -> odpowiedzialny za wyswietlenie polowow -->
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/button5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/button3_text" />
+            android:text="@string/button3_text"
+            android:layout_marginBottom="20dp" />/>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
